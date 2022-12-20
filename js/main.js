@@ -54,5 +54,5 @@ function returnHome(){
   if(window.hold == true){
     return;
   }
-  location.href = "https://ubg365.github.io";
+  location.href = "https://ubg247.github.io";
 }
