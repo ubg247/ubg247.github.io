@@ -35,8 +35,7 @@ function addCss(){
 }
 
 function addBtnHome(){
-  var e = document.createElement('div');
-  e.innerHTML = `<div class="back-home" title="BackHome"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  document.body.innerHTML += `<div class="back-home" id="back-home" title="BackHome"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="icon_home">
 <path id="Vector" d="M24 0H0V24H24V0Z" fill="white" fill-opacity="0.27"></path>
 <g id="Union">
@@ -45,7 +44,6 @@ function addBtnHome(){
 </g>
 </g>
 </svg>`;
-  document.getElementsByTagName('body')[0].appendChild(e);
 }
 
 window.addEventListener('load', function() {
