@@ -35,10 +35,10 @@ function addCss(){
 }
 
 function addBtnHome(){
-  var e = document.createElement('div');
-  e.className = 'iframeClose active';
-  e.id = 'iframeClose';
-  document.getElementsByTagName('body')[0].appendChild(e);
+  var ex = document.createElement('div');
+  ex.className = 'iframeClose active';
+  ex.id = 'iframeClose';
+  document.getElementsByTagName('body')[0].appendChild(ex);
 }
 
 window.addEventListener('load', function() {
