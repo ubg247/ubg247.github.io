@@ -13,6 +13,11 @@ if (gaenabled == "false") {
   document.head.append(gascript, inlinegascript);
 }
 
+function LoadAds(){
+    var ads = document.createElement('script');
+     ads.setAttribute("src", "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5671039626108784"), ads.setAttribute("type", "text/javascript"), ads.setAttribute("crossOrigin", "anonymous"),  ads.onload = function (){
+    },document.head.appendChild(ads);
+}
 
 function addCss(){
   const e = document.createElement('style');
@@ -44,6 +49,7 @@ function addBtnHome(){
 window.addEventListener('load', function() {
   addCss();
   addBtnHome();
+  LoadAds();
   var btn = document.getElementById("iframeClose");
   btn.addEventListener("click", returnHome);    
 });
